@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import FullConvo from './FullConvo.tsx'
+import OvertimeListPage from './pages/overtimeListPage.tsx/overtimeListPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/full-convo" element={<FullConvo />} />
+        <Route path="/overtime" element={<OvertimeListPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
