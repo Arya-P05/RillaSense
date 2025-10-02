@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -32,6 +33,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div style={{ marginTop: '20px' }}>
+        <Link to="/full-convo" style={{ color: '#646cff', textDecoration: 'none' }}>
+          Go to Full Conversation →
+        </Link>
+      </div>
     </>
   )
 }
